@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 const nav = [
   { href: "/#characters", label: "Characters" },
   { href: "/#sets", label: "Sets" },
-  { href: "/script", label: "Script" },
+  { href: "/script", label: "Screenplay" },
 ];
 
 function NavLink({
@@ -26,7 +26,7 @@ function NavLink({
 }) {
   const pathname = usePathname();
   const isScript = href === "/script";
-  const active = isScript && pathname === "/script";
+  const active = isScript && pathname.startsWith("/script");
 
   return (
     <Link
@@ -55,8 +55,9 @@ export function StickyHeader() {
         <Link
           href="/"
           className="site-header-wordmark shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-500"
+          aria-label="earlier — home"
         >
-          earlier
+          e*
         </Link>
 
         <nav

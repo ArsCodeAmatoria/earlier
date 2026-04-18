@@ -8,6 +8,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { buttonVariants } from "@/components/ui/button";
+import { CONTACT_EMAIL } from "@/lib/site-copy";
 import { cn } from "@/lib/utils";
 
 type ContactDialogProps = {
@@ -24,21 +25,18 @@ export function ContactDialog({ open, onOpenChange }: ContactDialogProps) {
             Contact
           </DialogTitle>
           <DialogDescription className="text-zinc-400">
-            Press &amp; festival inquiries for{" "}
-            <span className="text-zinc-200">earlier</span>.
+            Press and festival inquiries for{" "}
+            <span className="font-logo-script text-zinc-200">earlier</span>.
           </DialogDescription>
         </DialogHeader>
-        <p className="text-sm text-zinc-400">
-          Replace with your production email or form handler.
-        </p>
         <a
-          href="mailto:press@earlier.film"
+          href={`mailto:${CONTACT_EMAIL}`}
           className={cn(
             buttonVariants({ variant: "default", size: "lg" }),
             "type-display-md mt-2 inline-flex w-full justify-center text-sm",
           )}
         >
-          press@earlier.film
+          {CONTACT_EMAIL}
         </a>
       </DialogContent>
     </Dialog>

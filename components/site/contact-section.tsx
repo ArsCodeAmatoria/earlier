@@ -1,6 +1,7 @@
 "use client";
 
 import { useContact } from "@/components/site/contact-provider";
+import { CONTACT_EMAIL, CONTACT_INTRO } from "@/lib/site-copy";
 import { cn } from "@/lib/utils";
 
 export function ContactSection() {
@@ -12,10 +13,9 @@ export function ContactSection() {
       className="site-container border-t border-zinc-800 py-20 md:py-28"
     >
       <h2 className="type-display-lg text-3xl md:text-4xl">Contact</h2>
-      <p className="body-md mt-6 max-w-xl text-zinc-400">
-        Festival, press, and booking inquiries for{" "}
-        <span className="text-zinc-200">earlier</span>. Replace with your
-        production email when ready.
+      <p className="body-md mt-6 max-w-2xl text-pretty text-zinc-400">
+        {CONTACT_INTRO} For{" "}
+        <span className="font-logo-script text-zinc-200">earlier</span>, reach us below.
       </p>
       <div className="mt-10 flex flex-wrap gap-4">
         <button
@@ -28,12 +28,12 @@ export function ContactSection() {
           Open contact
         </button>
         <a
-          href="mailto:press@earlier.film"
+          href={`mailto:${CONTACT_EMAIL}`}
           className={cn(
             "type-display-md inline-flex items-center border border-zinc-800 px-6 py-4 text-sm text-zinc-400 transition-colors hover:border-zinc-600 hover:text-zinc-200",
           )}
         >
-          press@earlier.film
+          {CONTACT_EMAIL}
         </a>
       </div>
     </section>

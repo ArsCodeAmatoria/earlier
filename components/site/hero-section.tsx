@@ -2,16 +2,19 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
+import { HeroSongPlayer } from "@/components/site/hero-song-player";
+import { FILMING_LOCATIONS_PLACES, LOGLINE } from "@/lib/site-copy";
 import { cn } from "@/lib/utils";
 
 const lineDelay = 0.06;
 
-/** Intrinsic pixels — earlierpst1.png aspect ratio (1456×816, landscape) */
+/** Intrinsic pixels — earlierpst2.png aspect ratio (1456×816, landscape) */
 const POSTER_WIDTH = 1456;
 const POSTER_HEIGHT = 816;
 
 const credits = [
-  { lines: ["Written and directed by", "Jordan Ellis"] },
+  { lines: ["Written by", "Leigh Akin"] },
+  { lines: ["Filmed in", FILMING_LOCATIONS_PLACES] },
   { lines: ["Starring", "Riley Chen  ·  Maren Okorie"] },
   { lines: ["Director of photography", "Sam Okonkwo"] },
   { lines: ["Music by", "Theo Park"] },
@@ -32,7 +35,7 @@ export function HeroSection() {
 
       <div className="site-container relative flex min-h-[min(92dvh,52rem)] flex-col items-center justify-center px-4 py-20 md:min-h-[calc(100dvh-5rem)] md:py-24">
         <motion.div
-          className="flex w-full max-w-lg flex-col items-center text-center"
+          className="flex w-full max-w-5xl flex-col items-center text-center"
           initial="hidden"
           animate="visible"
           variants={{
@@ -42,12 +45,12 @@ export function HeroSection() {
         >
           <motion.p
             variants={fadeUp}
-            className="type-display-md mb-4 text-[0.65rem] tracking-[0.35em] text-zinc-600 md:text-xs"
+            className="type-display-md mx-auto mb-4 max-w-3xl text-[0.65rem] tracking-[0.35em] text-zinc-600 md:text-xs"
           >
-            Feature film
+            Indie Film
           </motion.p>
 
-          <h1 id="page-heading" className="w-full">
+          <h1 id="page-heading" className="mx-auto w-full max-w-3xl">
             <motion.span
               variants={fadeUp}
               className="type-display-xl block text-[clamp(3.5rem,16vw,8.5rem)] leading-[0.88] tracking-[0.02em] text-zinc-50"
@@ -64,25 +67,29 @@ export function HeroSection() {
 
           <motion.p
             variants={fadeUp}
-            className="font-serif mt-8 max-w-[28ch] text-base italic leading-relaxed text-zinc-400 md:text-lg"
+            className="body-md mx-auto mt-8 max-w-3xl text-pretty leading-relaxed text-zinc-400 md:text-lg"
           >
-            Memory lingers where the light used to be.
+            {LOGLINE}
           </motion.p>
 
           <motion.figure
             variants={fadeUp}
-            className="relative mt-12 w-full max-w-[min(78vw,300px)] sm:max-w-[320px] md:max-w-[340px]"
+            className="relative mt-12 w-full max-w-[min(94vw,560px)] sm:max-w-[640px] md:max-w-[min(88vw,800px)] lg:max-w-[min(90rem,960px)]"
           >
             <Image
-              src="/images/earlierpst1.png"
+              src="/images/earlierpst2.png"
               alt="earlier — film poster"
               width={POSTER_WIDTH}
               height={POSTER_HEIGHT}
               className="h-auto w-full"
-              sizes="(max-width: 768px) 78vw, 340px"
+              sizes="(max-width: 640px) 94vw, (max-width: 1024px) 88vw, 960px"
               priority
             />
           </motion.figure>
+
+          <motion.div variants={fadeUp} className="mt-10 w-full">
+            <HeroSongPlayer className="mx-auto" />
+          </motion.div>
 
           <motion.div
             variants={fadeUp}

@@ -137,6 +137,14 @@
   .font-condensed {
     font-family: var(--font-condensed);
   }
+  /** Title logo — fat script (Lobster), lowercase, no faux small caps */
+  .font-logo-script {
+    font-family: var(--font-logo-script), ui-serif, Georgia, serif;
+    font-weight: 400;
+    font-synthesis: none;
+    letter-spacing: 0;
+    text-transform: none;
+  }
   .text-balance {
     text-wrap: balance;
   }
@@ -169,15 +177,15 @@
     text-transform: uppercase;
   }
 
-  /* Sticky bar wordmark — fat condensed title like Truck'N Roll® */
+  /* Sticky bar wordmark — script e* (hero uses condensed display type) */
   .site-header-wordmark {
-    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
-    font-weight: 700;
+    font-family: var(--font-logo-script), ui-serif, Georgia, serif;
+    font-weight: 400;
     font-synthesis: none;
-    font-size: clamp(1.375rem, 3.2vw, 2rem);
-    letter-spacing: 0.085em;
+    font-size: clamp(1.75rem, 2.5vw + 0.9rem, 2.5rem);
+    letter-spacing: 0;
     line-height: 1;
-    text-transform: uppercase;
+    text-transform: none;
     color: oklch(0.98 0 0);
   }
 
