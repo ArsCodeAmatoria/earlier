@@ -73,17 +73,15 @@ export function HeroSection() {
             variants={fadeUp}
             className="relative mt-12 w-full max-w-[min(78vw,300px)] sm:max-w-[320px] md:max-w-[340px]"
           >
-            <div className="rounded-[2px] bg-zinc-900 p-[3px] shadow-[0_25px_80px_-12px_rgba(0,0,0,0.85),0_0_0_1px_rgba(255,255,255,0.06)_inset] ring-1 ring-white/10">
-              <Image
-                src="/images/earlierposter.png"
-                alt="earlier — film poster"
-                width={POSTER_WIDTH}
-                height={POSTER_HEIGHT}
-                className="h-auto w-full rounded-[1px]"
-                sizes="(max-width: 768px) 78vw, 340px"
-                priority
-              />
-            </div>
+            <Image
+              src="/images/earlierposter.png"
+              alt="earlier — film poster"
+              width={POSTER_WIDTH}
+              height={POSTER_HEIGHT}
+              className="h-auto w-full"
+              sizes="(max-width: 768px) 78vw, 340px"
+              priority
+            />
           </motion.figure>
 
           {/* Billing block — poster-style credits patch */}
