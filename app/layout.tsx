@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Oswald } from "next/font/google";
+import { ContactProvider } from "@/components/site/contact-provider";
+import { StickyHeader } from "@/components/site/sticky-header";
 import "./globals.css";
 
 const inter = Inter({
@@ -35,7 +37,12 @@ export default function RootLayout({
       lang="en"
       className={`dark ${inter.variable} ${oswald.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full bg-[#0a0a0a] text-zinc-100">{children}</body>
+      <body className="min-h-full bg-[#0a0a0a] text-zinc-100">
+        <ContactProvider>
+          <StickyHeader />
+          {children}
+        </ContactProvider>
+      </body>
     </html>
   );
 }

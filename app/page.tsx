@@ -1,13 +1,7 @@
-import { StickyHeader } from "@/components/site/sticky-header";
 import { HeroSection } from "@/components/site/hero-section";
-import { EngineSection } from "@/components/site/engine-section";
-import { BigTypeSection } from "@/components/site/big-type-section";
-import { PillarsSection } from "@/components/site/pillars-section";
-import { SplashSection } from "@/components/site/splash-section";
-import { UseCasesSection } from "@/components/site/use-cases-section";
-import { LightStackSection } from "@/components/site/light-stack-section";
-import { GallerySection } from "@/components/site/gallery-section";
-import { PreFooterSection } from "@/components/site/pre-footer-section";
+import { CharactersSection } from "@/components/site/characters-section";
+import { SetsSection } from "@/components/site/sets-section";
+import { ContactSection } from "@/components/site/contact-section";
 import { SiteFooter } from "@/components/site/site-footer";
 
 export default function Home() {
@@ -19,17 +13,11 @@ export default function Home() {
       >
         Access to main content
       </a>
-      <StickyHeader />
       <main id="main">
         <HeroSection />
-        <EngineSection />
-        <BigTypeSection />
-        <PillarsSection />
-        <SplashSection />
-        <UseCasesSection />
-        <LightStackSection />
-        <GallerySection />
-        <PreFooterSection />
+        <CharactersSection />
+        <SetsSection />
+        <ContactSection />
         <SiteFooter />
       </main>
     </>
