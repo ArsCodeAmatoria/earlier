@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { HeroSongPlayer } from "@/components/site/hero-song-player";
-import { FILMING_LOCATIONS_PLACES, LOGLINE } from "@/lib/site-copy";
+import { FILMING_LOCATIONS_PLACES, LOGLINE, PRODUCTION_COMPANY } from "@/lib/site-copy";
 import { cn } from "@/lib/utils";
 
 const lineDelay = 0.06;
@@ -18,7 +18,7 @@ const credits = [
   { lines: ["Starring", "Riley Chen  ·  Maren Okorie"] },
   { lines: ["Director of photography", "Sam Okonkwo"] },
   { lines: ["Music by", "Theo Park"] },
-  { lines: ["An Earlier Pictures release"] },
+  { lines: ["Production company", PRODUCTION_COMPANY] },
 ] as const;
 
 export function HeroSection() {
@@ -115,7 +115,7 @@ export function HeroSection() {
               ))}
             </div>
             <p className="type-display-md mt-8 text-[0.5rem] tracking-[0.32em] text-zinc-700">
-              © earlier pictures
+              © {PRODUCTION_COMPANY}
             </p>
           </motion.div>
         </motion.div>

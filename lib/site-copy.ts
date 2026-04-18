@@ -14,6 +14,9 @@ export const SETS_SECTION_INTRO =
 export const CONTACT_INTRO =
   "Screeners, PDFs, and festival packets on request. If you’re programming, packaging, or casting: we’re glad to talk tone, structure, and why this one earns its final image.";
 
+/** Film production company (hero billing, copyright line). */
+export const PRODUCTION_COMPANY = "A Thousand Cuts Films";
+
 /** Primary contact email (home contact + header dialog). */
 export const CONTACT_EMAIL = "kojinfox@gmail.com";
 
