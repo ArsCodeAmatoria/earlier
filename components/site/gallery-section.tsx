@@ -12,7 +12,7 @@ const shots = [
 
 export function GallerySection() {
   return (
-    <section id="gallery" className="mx-auto mt-28 max-w-[min(100%-1.5rem,90rem)] md:mt-36">
+    <section id="gallery" className="site-container mt-28 md:mt-36">
       <h2 className="font-heading text-sm font-medium uppercase tracking-[0.16em] text-zinc-500">
         Stills
       </h2>

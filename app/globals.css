@@ -140,4 +140,47 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Editorial scale — mirrors trucknroll.com body / display rhythm */
+  .site-container {
+    @apply mx-auto w-full max-w-[min(100%-1.5rem,90rem)] px-[clamp(0.75rem,3.5vw,2.5rem)];
+  }
+
+  .body-md {
+    @apply text-[0.9375rem] leading-relaxed md:text-base;
+  }
+
+  .body-lg {
+    @apply text-lg leading-snug md:text-xl;
+  }
+
+  .inview-border {
+    @apply border-t border-zinc-700/80 pt-6 md:border-t-0 md:pt-0;
+  }
+
+  @keyframes marquee-l {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes marquee-r {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-marquee-l {
+    animation: marquee-l 45s linear infinite;
+  }
+
+  .animate-marquee-r {
+    animation: marquee-r 45s linear infinite;
+  }
 }

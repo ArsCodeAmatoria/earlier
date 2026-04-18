@@ -9,10 +9,10 @@ const lineDelay = 0.06;
 
 export function HeroSection() {
   return (
-    <section className="relative pt-24 md:pt-28">
-      <div className="mx-auto grid max-w-[min(100%-1.5rem,90rem)] gap-10 md:grid-cols-2 md:gap-6 lg:gap-12">
+    <section className="site-container relative pt-24 md:pt-28">
+      <div className="grid gap-10 md:grid-cols-2 md:gap-6 lg:gap-12">
         <div className="flex flex-col gap-8">
-          <div className="relative aspect-[14/9] w-full overflow-hidden rounded-sm md:max-h-[min(70vh,520px)]">
+          <div className="relative aspect-[14/9] w-full overflow-hidden md:max-h-[min(70vh,520px)]">
             <Image
               src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1400&q=80"
               alt=""
@@ -21,16 +21,16 @@ export function HeroSection() {
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/60 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-[#0a0a0a]/60 to-transparent" />
           </div>
-          <p className="max-w-xl text-pretty text-base leading-relaxed text-zinc-400 md:text-lg">
-            earlier is a film built for the quiet, demanding space between memory
-            and the present. Years in the making, it follows two lives trying to
-            meet in the middle of everything that came before.
+          <p className="body-md max-w-xl text-pretty text-zinc-400">
+            earlier is a film built for the fast, demanding space between memory
+            and the present. For years we&apos;ve followed two lives trying to meet
+            in the middle of everything that came before.
           </p>
         </div>
 
-        <div className="flex flex-col justify-between gap-10">
+        <div className="flex min-h-0 flex-col justify-between gap-12 md:min-h-[min(85vh,760px)]">
           <nav className="hidden md:block">
             <ul className="flex flex-wrap gap-x-10 gap-y-2">
               {[
@@ -42,7 +42,7 @@ export function HeroSection() {
                     href={item.href}
                     className={cn(
                       "font-heading text-sm font-medium uppercase tracking-[0.14em] text-zinc-500",
-                      "bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-bottom bg-no-repeat transition-all hover:bg-[length:100%_1px] hover:text-zinc-200",
+                      "bg-[linear-gradient(currentColor,currentColor)] bg-size-[0%_1px] bg-bottom bg-no-repeat transition-all hover:bg-size-[100%_1px] hover:text-zinc-200",
                     )}
                   >
                     {item.label}
@@ -53,29 +53,30 @@ export function HeroSection() {
           </nav>
 
           <motion.h1
-            className="font-heading text-[clamp(2.75rem,8vw,5.5rem)] font-semibold uppercase leading-[0.92] tracking-[0.02em] text-zinc-50"
+            className="font-heading text-[clamp(2.85rem,9.2vw,5.85rem)] font-semibold uppercase not-italic leading-[0.9] tracking-[0.06em] text-zinc-50"
             initial="hidden"
             animate="visible"
             variants={{
               visible: { transition: { staggerChildren: lineDelay } },
               hidden: {},
             }}
+            id="page-heading"
           >
-            <TitleLine>Before</TitleLine>
-            <TitleLine>midnight,</TitleLine>
-            <TitleLine className="flex flex-wrap items-end gap-3">
-              <span>no</span>
-              <span className="relative inline-block aspect-[47/25] w-[min(42vw,220px)] shrink-0 overflow-hidden rounded-sm md:w-[240px]">
+            <TitleLine>FULL</TitleLine>
+            <TitleLine>FRAMES,</TitleLine>
+            <TitleLine className="flex flex-wrap items-end gap-3 md:gap-5">
+              <span>NO</span>
+              <span className="relative inline-block aspect-[47/25] w-[min(46vw,260px)] shrink-0 overflow-hidden md:w-[min(18vw,280px)]">
                 <Image
                   src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=600&q=80"
                   alt=""
                   fill
                   className="object-cover"
-                  sizes="240px"
+                  sizes="280px"
                 />
               </span>
             </TitleLine>
-            <TitleLine>looking back.</TitleLine>
+            <TitleLine>REGRETS.</TitleLine>
           </motion.h1>
         </div>
       </div>
@@ -94,7 +95,7 @@ function TitleLine({
     <motion.span
       className={cn("block", className)}
       variants={{
-        hidden: { opacity: 0, y: 24 },
+        hidden: { opacity: 0, y: 28 },
         visible: {
           opacity: 1,
           y: 0,

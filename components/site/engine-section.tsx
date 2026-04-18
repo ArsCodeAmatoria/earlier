@@ -17,11 +17,11 @@ export function EngineSection() {
 
   return (
     <>
-      <section id="story" className="mx-auto mt-24 max-w-[min(100%-1.5rem,90rem)] md:mt-32">
-        <div className="grid gap-10 md:grid-cols-12 md:gap-6 lg:gap-10">
-          <div className="md:col-span-5">
+      <section id="story" className="site-container my-24 md:my-32">
+        <div className="grid md:grid-cols-12 md:gap-6 lg:gap-10">
+          <div className="md:col-span-5 lg:col-end-6">
             <h2 className="font-heading max-w-[22rem] text-2xl font-semibold uppercase leading-tight tracking-[0.04em] text-zinc-100 md:text-3xl">
-              The heart of every frame.
+              The engine of every show.
             </h2>
           </div>
         </div>
@@ -51,29 +51,29 @@ export function EngineSection() {
           </div>
 
           <motion.div
-            className="border-t border-zinc-800 pt-6 md:col-span-7 md:col-start-7 md:border-t-0 md:pt-2"
+            className="inview-border md:col-span-7 md:col-start-7 lg:border-t-0 lg:border-l lg:border-zinc-800 lg:pl-10 xl:pl-14"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5 }}
           >
             <p className="font-heading text-sm font-medium uppercase tracking-[0.16em] text-zinc-500">
-              The story
+              What we do
             </p>
             <p className="font-heading mt-6 text-2xl font-semibold uppercase leading-snug tracking-[0.03em] text-zinc-100 md:text-3xl">
-              We don’t just remember. We live in the{" "}
-              <strong className="text-white">echo of what happened.</strong>
+              We don&apos;t just shoot scenes. We make sure everything lands{" "}
+              <strong className="text-white">when it matters most.</strong>
             </p>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 sm:gap-8">
-              <p className="text-base leading-relaxed text-zinc-400">
-                Two people, one road, and the version of the past that refuses to
-                stay where it belongs. earlier traces how love and regret share the
-                same address.
+              <p className="body-md text-zinc-400">
+                We don&apos;t just deliver dailies. We make sure picture and sound
+                arrive with intention — professionally, consistently, and on
+                schedule.
               </p>
-              <p className="text-base leading-relaxed text-zinc-400">
-                Shot on location across the northern plains, the film follows a
-                reunion that arrives too early and too late at once — and asks what
-                we owe the people we used to be.
+              <p className="body-md text-zinc-400">
+                Our team understands tours, festivals, and long roads. We plan
+                every leg, stay close to your crew, and adapt when the day throws a
+                curve — so the film never runs late.
               </p>
             </div>
           </motion.div>

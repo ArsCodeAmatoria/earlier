@@ -19,7 +19,7 @@ export function StickyHeader() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-[#0a0a0a]/85 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-[min(100%-1.5rem,90rem)] items-center justify-between md:h-16">
+      <div className="site-container flex h-14 items-center justify-between md:h-16">
         <Link
           href="/"
           className="font-heading text-sm font-semibold uppercase tracking-[0.12em] text-zinc-100 transition-colors hover:text-white"

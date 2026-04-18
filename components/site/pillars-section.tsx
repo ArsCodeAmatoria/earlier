@@ -6,22 +6,22 @@ import { motion } from "motion/react";
 const items = [
   {
     n: "1",
-    title: "Stillness\nas pace",
-    body: "Long takes and quiet rooms let the performances breathe. Nothing is rushed — the edit follows emotion, not clock time.",
+    title: "Flawless\nexecution",
+    body: "Every detail is handled. Every deadline met. No stress, no scrambling — just a crew that makes sure the day rolls exactly as planned. Every time.",
     image:
       "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=900&q=80",
   },
   {
     n: "2",
-    title: "Place as\ncharacter",
-    body: "Snow, neon, and empty highways are not backdrop — they push the story when words fail. We shot seasons as they arrived.",
+    title: "Safety-first\nstandards",
+    body: "From the road to the set, safety is at the heart of what we do. Experienced team, clear protocols, and zero guesswork when the schedule is tight.",
     image:
       "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80",
   },
   {
     n: "3",
-    title: "Sound-first\nmemory",
-    body: "Score and room tone carry what the characters won’t say. The mix is built so you feel the past before you see it.",
+    title: "Solution\noriented",
+    body: "We sync with your timeline, your challenges, and your priorities. We don’t just react — we anticipate. We are your road crew.",
     image:
       "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80",
   },
@@ -29,7 +29,7 @@ const items = [
 
 export function PillarsSection() {
   return (
-    <section className="mx-auto mt-28 max-w-[min(100%-1.5rem,90rem)] md:mt-40">
+    <section className="site-container my-28 md:my-40">
       <div className="grid gap-16 md:grid-cols-3 md:gap-8 lg:gap-10">
         {items.map((item, i) => (
           <motion.article
@@ -41,12 +41,14 @@ export function PillarsSection() {
             className="border-t border-zinc-800 pt-8"
           >
             <div className="font-heading flex items-start justify-between gap-4">
-              <span className="text-sm text-zinc-600">( {item.n} )</span>
-              <h3 className="max-w-[12rem] whitespace-pre-line text-right text-xl font-semibold uppercase leading-tight tracking-[0.06em] text-zinc-100">
+              <span className="text-xs tracking-[0.12em] text-zinc-600">
+                ( {item.n} )
+              </span>
+              <h3 className="max-w-[13rem] whitespace-pre-line text-right text-lg font-semibold uppercase leading-tight tracking-[0.08em] text-zinc-100 md:text-xl">
                 {item.title}
               </h3>
             </div>
-            <p className="mt-6 text-sm leading-relaxed text-zinc-400 md:text-base">
+            <p className="body-md mt-6 text-zinc-400">
               {item.body}
             </p>
             <div className="relative mt-8 aspect-[4/3] w-full overflow-hidden rounded-md">
