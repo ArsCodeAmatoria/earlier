@@ -64,10 +64,10 @@ export function UseCasesSection() {
               <details key={item.q} className="group">
                 <summary className="flex cursor-pointer list-none items-start justify-between gap-4 py-5 [&::-webkit-details-marker]:hidden">
                   <span className="flex min-w-0 flex-1 flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-4">
-                    <span className="body-lg font-heading font-medium uppercase tracking-[0.06em] text-zinc-100">
+                    <span className="type-display-md text-base leading-tight text-zinc-100 md:text-lg">
                       {item.q}
                     </span>
-                    <span className="body-lg font-heading text-zinc-500 uppercase tracking-[0.04em]">
+                    <span className="body-lg font-heading font-normal text-zinc-500 uppercase tracking-[0.04em]">
                       {item.hint}
                     </span>
                   </span>

@@ -52,7 +52,7 @@ export function BigTypeSection() {
         </motion.div>
 
         <div className="mt-12 flex flex-col gap-8 md:mt-20 md:flex-row md:items-end md:justify-between md:gap-12">
-          <p className="font-heading max-w-40 text-xs uppercase leading-relaxed tracking-[0.14em] text-zinc-500">
+          <p className="max-w-40 font-sans text-[0.65rem] uppercase leading-relaxed tracking-[0.2em] text-zinc-500 md:text-xs">
             ESTD. 2026
             <br />
             INDEPENDENT
@@ -60,7 +60,7 @@ export function BigTypeSection() {
             © earlier
           </p>
           <div className="max-w-xl space-y-4">
-            <p className="font-heading text-sm font-medium uppercase tracking-[0.16em] text-zinc-500">
+            <p className="type-display-md text-xs text-zinc-500 md:text-sm">
               ( Three key steps )
             </p>
             <p className="body-md text-zinc-400">
@@ -88,7 +88,7 @@ function HugeLine({
       viewport={{ once: true, margin: "-12%" }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={cn(
-        "font-heading text-[clamp(2.4rem,12vw,8.25rem)] font-semibold uppercase leading-[0.88] tracking-[0.03em] text-zinc-100",
+        "type-display-xl text-[clamp(2.35rem,12vw,8.5rem)] leading-[0.86] text-zinc-100",
         className,
       )}
     >

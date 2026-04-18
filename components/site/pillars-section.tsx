@@ -44,7 +44,7 @@ export function PillarsSection() {
               <span className="text-xs tracking-[0.12em] text-zinc-600">
                 ( {item.n} )
               </span>
-              <h3 className="max-w-[13rem] whitespace-pre-line text-right text-lg font-semibold uppercase leading-tight tracking-[0.08em] text-zinc-100 md:text-xl">
+              <h3 className="type-display-md max-w-[13rem] whitespace-pre-line text-right text-base leading-tight text-zinc-100 md:text-lg">
                 {item.title}
               </h3>
             </div>

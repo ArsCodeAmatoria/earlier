@@ -4,13 +4,13 @@ import Link from "next/link";
 
 const rail = (
   <>
-    <span className="font-heading pb-[0.05em] text-2xl font-semibold uppercase md:text-3xl">
+    <span className="type-display-lg pb-[0.05em] text-2xl md:text-3xl">
       It&apos;s a
     </span>
     <span className="mx-3 inline-flex size-10 items-center justify-center rounded-full border border-current md:mx-4 md:size-12">
       <span className="text-xs font-bold">e</span>
     </span>
-    <span className="font-heading pb-[0.05em] text-2xl font-semibold uppercase md:text-3xl">
+    <span className="type-display-lg pb-[0.05em] text-2xl md:text-3xl">
       wrap
     </span>
     <span className="ml-6 flex flex-col items-center text-center text-[0.65rem] font-medium uppercase leading-tight tracking-[0.14em] md:ml-10 md:text-xs">

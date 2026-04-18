@@ -13,7 +13,7 @@ const shots = [
 export function GallerySection() {
   return (
     <section id="gallery" className="site-container mt-28 md:mt-36">
-      <h2 className="font-heading text-sm font-medium uppercase tracking-[0.16em] text-zinc-500">
+      <h2 className="type-display-md text-xs text-zinc-500 md:text-sm">
         Stills
       </h2>
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

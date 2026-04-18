@@ -20,7 +20,7 @@ export function ContactDialog({ open, onOpenChange }: ContactDialogProps) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="border-zinc-800 bg-[#121212] text-zinc-100 sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="font-heading text-xl font-semibold uppercase tracking-[0.08em]">
+          <DialogTitle className="type-display-lg text-xl">
             Contact
           </DialogTitle>
           <DialogDescription className="text-zinc-400">
@@ -35,7 +35,7 @@ export function ContactDialog({ open, onOpenChange }: ContactDialogProps) {
           href="mailto:press@earlier.film"
           className={cn(
             buttonVariants({ variant: "default", size: "lg" }),
-            "font-heading mt-2 inline-flex w-full justify-center uppercase tracking-wider",
+            "type-display-md mt-2 inline-flex w-full justify-center text-sm",
           )}
         >
           press@earlier.film

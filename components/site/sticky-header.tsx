@@ -22,7 +22,7 @@ export function StickyHeader() {
       <div className="site-container flex h-14 items-center justify-between md:h-16">
         <Link
           href="/"
-          className="font-heading text-sm font-semibold uppercase tracking-[0.12em] text-zinc-100 transition-colors hover:text-white"
+          className="type-display-md text-sm text-zinc-100 transition-colors hover:text-white"
         >
           earlier
         </Link>
@@ -33,7 +33,7 @@ export function StickyHeader() {
               key={item.href}
               href={item.href}
               className={cn(
-                "font-heading text-sm font-medium uppercase tracking-[0.14em] text-zinc-400",
+                "type-display-md text-sm text-zinc-400",
                 "bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-bottom bg-no-repeat transition-all hover:bg-[length:100%_1px] hover:text-zinc-100",
               )}
             >
@@ -44,7 +44,7 @@ export function StickyHeader() {
             type="button"
             onClick={() => setContactOpen(true)}
             className={cn(
-              "font-heading cursor-pointer text-sm font-medium uppercase tracking-[0.14em] text-zinc-400",
+              "type-display-md cursor-pointer text-sm text-zinc-400",
               "bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-bottom bg-no-repeat transition-all hover:bg-[length:100%_1px] hover:text-zinc-100",
             )}
           >
@@ -79,14 +79,14 @@ export function StickyHeader() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="font-heading text-lg font-semibold uppercase tracking-[0.12em]"
+                    className="type-display-lg text-lg"
                   >
                     {item.label}
                   </Link>
                 ))}
                 <button
                   type="button"
-                  className="font-heading text-left text-lg font-semibold uppercase tracking-[0.12em]"
+                  className="type-display-lg text-left text-lg"
                   onClick={() => {
                     setOpen(false);
                     setContactOpen(true);

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed, Inter } from "next/font/google";
+import { Inter, Oswald } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,10 +7,11 @@ const inter = Inter({
   variable: "--font-body",
 });
 
-const barlowCondensed = Barlow_Condensed({
+/** Condensed display — close to Truck'N Roll's National 2 Condensed Bold (heavy stem, narrow width) */
+const oswald = Oswald({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-display",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -32,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`dark ${inter.variable} ${barlowCondensed.variable} h-full scroll-smooth antialiased`}
+      className={`dark ${inter.variable} ${oswald.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full bg-[#0a0a0a] text-zinc-100">{children}</body>
     </html>

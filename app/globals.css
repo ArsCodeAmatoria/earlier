@@ -141,6 +141,34 @@
     text-wrap: balance;
   }
 
+  /**
+   * Fat condensed display (National 2–style): Oswald 700, tight leading,
+   * slightly open tracking so stacked lines match trucknroll.com hero / huge type.
+   */
+  .type-display-xl {
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    font-synthesis: none;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+  }
+
+  .type-display-lg {
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    font-synthesis: none;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .type-display-md {
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
+    font-synthesis: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
   /* Editorial scale — mirrors trucknroll.com body / display rhythm */
   .site-container {
     @apply mx-auto w-full max-w-[min(100%-1.5rem,90rem)] px-[clamp(0.75rem,3.5vw,2.5rem)];

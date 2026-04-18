@@ -41,7 +41,7 @@ export function HeroSection() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "font-heading text-sm font-medium uppercase tracking-[0.14em] text-zinc-500",
+                      "type-display-md text-sm text-zinc-500",
                       "bg-[linear-gradient(currentColor,currentColor)] bg-size-[0%_1px] bg-bottom bg-no-repeat transition-all hover:bg-size-[100%_1px] hover:text-zinc-200",
                     )}
                   >
@@ -53,7 +53,7 @@ export function HeroSection() {
           </nav>
 
           <motion.h1
-            className="font-heading text-[clamp(2.85rem,9.2vw,5.85rem)] font-semibold uppercase not-italic leading-[0.9] tracking-[0.06em] text-zinc-50"
+            className="type-display-xl text-[clamp(2.85rem,9.2vw,5.85rem)] leading-[0.88] text-zinc-50"
             initial="hidden"
             animate="visible"
             variants={{

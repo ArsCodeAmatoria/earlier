@@ -19,7 +19,7 @@ export function LightStackSection() {
       <section className="site-container py-14 md:py-20">
         <span className="sr-only">A small crew that never sleeps</span>
         <h2
-          className="font-heading flex flex-wrap gap-x-[0.2em] gap-y-1 text-3xl font-semibold uppercase leading-[1.05] tracking-[0.03em] md:text-4xl lg:text-5xl"
+          className="type-display-lg flex flex-wrap gap-x-[0.2em] gap-y-1 text-3xl leading-[1.06] md:text-4xl lg:text-5xl"
           aria-hidden
         >
           <span>A</span>
@@ -36,7 +36,7 @@ export function LightStackSection() {
           />
         </div>
         <h2
-          className="font-heading flex flex-wrap gap-x-[0.2em] gap-y-1 text-3xl font-semibold uppercase leading-[1.05] tracking-[0.03em] md:text-4xl lg:text-5xl"
+          className="type-display-lg flex flex-wrap gap-x-[0.2em] gap-y-1 text-3xl leading-[1.06] md:text-4xl lg:text-5xl"
           aria-hidden
         >
           <span>That</span>
@@ -51,7 +51,7 @@ export function LightStackSection() {
           data-border-parent
         >
           <div className="max-w-xs space-y-4">
-            <p className="body-md font-heading leading-snug font-medium uppercase tracking-[0.12em]">
+            <p className="body-md type-display-md text-sm leading-snug">
               earlier
               <br />
               A film
@@ -70,7 +70,7 @@ export function LightStackSection() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
               >
-                <p className="font-heading text-3xl font-semibold tabular-nums md:text-4xl">
+                <p className="type-display-lg text-3xl tabular-nums leading-none md:text-4xl">
                   {s.value}
                 </p>
                 <p className="body-md mt-2 max-w-[11rem] text-zinc-700">
@@ -96,7 +96,7 @@ export function LightStackSection() {
             </div>
           </div>
           <div className="md:col-span-5 md:col-start-8 lg:col-span-4 lg:col-start-9">
-            <h2 className="font-heading max-w-[14ch] text-2xl font-semibold uppercase leading-tight tracking-[0.04em] md:text-3xl">
+            <h2 className="type-display-lg max-w-[14ch] text-2xl leading-tight md:text-3xl">
               <span className="text-balance">Ready?</span>{" "}
               <span className="text-balance">Let&apos;s talk screenings.</span>
             </h2>
@@ -107,7 +107,7 @@ export function LightStackSection() {
             <Link
               href="mailto:festivals@earlier.film"
               className={cn(
-                "font-heading mt-8 inline-flex w-full max-w-sm items-center justify-between gap-4 border border-zinc-900 bg-zinc-900 px-5 py-4 text-sm font-medium uppercase tracking-[0.14em] text-zinc-50 transition-colors hover:bg-zinc-950 md:px-6",
+                "type-display-md mt-8 inline-flex w-full max-w-sm items-center justify-between gap-4 border border-zinc-900 bg-zinc-900 px-5 py-4 text-sm text-zinc-50 transition-colors hover:bg-zinc-950 md:px-6",
               )}
             >
               <span>Plan your screening</span>

@@ -20,7 +20,7 @@ export function EngineSection() {
       <section id="story" className="site-container my-24 md:my-32">
         <div className="grid md:grid-cols-12 md:gap-6 lg:gap-10">
           <div className="md:col-span-5 lg:col-end-6">
-            <h2 className="font-heading max-w-[22rem] text-2xl font-semibold uppercase leading-tight tracking-[0.04em] text-zinc-100 md:text-3xl">
+            <h2 className="type-display-lg max-w-[22rem] text-2xl leading-tight text-zinc-100 md:text-3xl">
               The engine of every show.
             </h2>
           </div>
@@ -57,10 +57,10 @@ export function EngineSection() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5 }}
           >
-            <p className="font-heading text-sm font-medium uppercase tracking-[0.16em] text-zinc-500">
+            <p className="type-display-md text-xs text-zinc-500 md:text-sm">
               What we do
             </p>
-            <p className="font-heading mt-6 text-2xl font-semibold uppercase leading-snug tracking-[0.03em] text-zinc-100 md:text-3xl">
+            <p className="type-display-lg mt-6 text-2xl leading-snug text-zinc-100 md:text-3xl">
               We don&apos;t just shoot scenes. We make sure everything lands{" "}
               <strong className="text-white">when it matters most.</strong>
             </p>

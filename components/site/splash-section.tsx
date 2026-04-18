@@ -19,10 +19,10 @@ export function SplashSection() {
           aria-hidden
         />
         <div className="absolute inset-0 flex flex-col justify-end gap-2 p-6 md:justify-center md:p-12 lg:p-16">
-          <p className="font-heading max-w-xl text-balance text-2xl font-semibold uppercase leading-[1.05] tracking-[0.04em] text-white md:text-3xl lg:text-4xl">
+          <p className="type-display-lg max-w-xl text-balance text-2xl leading-[1.06] text-white md:text-3xl lg:text-4xl">
             Every cut is different.
           </p>
-          <p className="font-heading max-w-xl text-balance text-2xl font-semibold uppercase leading-[1.05] tracking-[0.04em] text-white md:text-3xl lg:text-4xl">
+          <p className="type-display-lg max-w-xl text-balance text-2xl leading-[1.06] text-white md:text-3xl lg:text-4xl">
             We always stay in tune.
           </p>
         </div>
