@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils";
 
 const lineDelay = 0.06;
 
-/** Intrinsic pixels — true poster aspect ratio (816:1456) */
-const POSTER_WIDTH = 816;
-const POSTER_HEIGHT = 1456;
+/** Intrinsic pixels — earlierpst1.png aspect ratio (1456×816, landscape) */
+const POSTER_WIDTH = 1456;
+const POSTER_HEIGHT = 816;
 
 const credits = [
   { lines: ["Written and directed by", "Jordan Ellis"] },
@@ -74,7 +74,7 @@ export function HeroSection() {
             className="relative mt-12 w-full max-w-[min(78vw,300px)] sm:max-w-[320px] md:max-w-[340px]"
           >
             <Image
-              src="/images/earlierpst.png"
+              src="/images/earlierpst1.png"
               alt="earlier — film poster"
               width={POSTER_WIDTH}
               height={POSTER_HEIGHT}
